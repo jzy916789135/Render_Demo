@@ -80,8 +80,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\OpenGl\Libraries\Includes;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\OpenGl\Libraries\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Renderder\Libraries\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Renderder\Libraries\Libs;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -125,7 +126,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -145,62 +146,55 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\glad\src\glad.c" />
-    <ClCompile Include="AdvanecLighting.cpp" />
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Color.cpp" />
-    <ClCompile Include="cubemap.cpp" />
-    <ClCompile Include="DepthTest.cpp" />
-    <ClCompile Include="FrameBuffer.cpp" />
-    <ClCompile Include="Hello_Shader.cpp" />
-    <ClCompile Include="hello_window.cpp" />
-    <ClCompile Include="location_system.cpp" />
-    <ClCompile Include="Shadow_Mapping.cpp" />
-    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Source\Collision.cpp" />
+    <ClCompile Include="Source\FrameBufferObject.cpp" />
+    <ClCompile Include="Source\GeometryGenerator.cpp" />
+    <ClCompile Include="Source\glad.c" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\MeshLoader.cpp" />
+    <ClCompile Include="Source\render.cpp" />
+    <ClCompile Include="Source\shader.cpp" />
+    <ClCompile Include="Source\test_camera.cpp" />
+    <ClCompile Include="Source\TextureLoader.cpp" />
+    <ClCompile Include="Source\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Libraries\Includes\glad\glad.h" />
     <ClInclude Include="..\..\Libraries\Includes\stb_image.h" />
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="shader.h" />
+    <ClInclude Include="Source\Collision.h" />
+    <ClInclude Include="Source\FrameBufferObject.h" />
+    <ClInclude Include="Source\GeometryGenerator.h" />
+    <ClInclude Include="Source\MeshLoader.h" />
+    <ClInclude Include="Source\render.h" />
+    <ClInclude Include="Source\test_camera.h" />
+    <ClInclude Include="Source\test_shader.h" />
+    <ClInclude Include="Source\TextureLoader.h" />
+    <ClInclude Include="Source\Utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="awesomeface.png" />
-    <Image Include="back.jpg" />
-    <Image Include="blending_transparent_window.png" />
-    <Image Include="bottom.jpg" />
-    <Image Include="container.jpg" />
-    <Image Include="container2.png" />
-    <Image Include="container2_specular.png" />
-    <Image Include="front.jpg" />
-    <Image Include="grass.png" />
-    <Image Include="left.jpg" />
-    <Image Include="matrix.jpg" />
-    <Image Include="right.jpg" />
-    <Image Include="top.jpg" />
+    <Image Include="Texture\back.jpg" />
+    <Image Include="Texture\bottom.jpg" />
+    <Image Include="Texture\brickwall.jpg" />
+    <Image Include="Texture\brickwall_normal.jpg" />
+    <Image Include="Texture\front.jpg" />
+    <Image Include="Texture\left.jpg" />
+    <Image Include="Texture\right.jpg" />
+    <Image Include="Texture\top.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="1.1.depth_testingfs.txt" />
-    <Text Include="1.1.depth_testingvs.txt" />
-    <Text Include="1.advenced_lighting_fs.txt" />
-    <Text Include="1.advenced_lighting_vs.txt" />
-    <Text Include="1.fcolors.txt" />
-    <Text Include="1.flight_cube.txt" />
-    <Text Include="1.vcolors.txt" />
-    <Text Include="3.1_debug_quad_fs.txt" />
-    <Text Include="3.1_debug_quad_vs.txt" />
-    <Text Include="3.1_shadow_mapping_depth_fs.txt" />
-    <Text Include="3.1_shadow_mapping_depth_vs.txt" />
-    <Text Include="cubemap_fs.txt" />
-    <Text Include="cubemap_vs.txt" />
-    <Text Include="cube_map_cubebox_fs.txt" />
-    <Text Include="cube_map_cubebox_vs.txt" />
-    <Text Include="framebuffer_fs.txt" />
-    <Text Include="framebuffer_vs.txt" />
-    <Text Include="shaderfs.txt" />
-    <Text Include="shadervs.txt" />
-    <Text Include="shadow_mapping_fs.txt" />
-    <Text Include="shadow_mapping_vs.txt" />
-    <Text Include="Stencilfs.txt" />
+    <None Include="shader\BoundingBox.frag" />
+    <None Include="shader\BoundingBox.vert" />
+    <None Include="shader\Light.frag" />
+    <None Include="shader\Light.vert" />
+    <None Include="shader\screen.frag" />
+    <None Include="shader\screen.vert" />
+    <None Include="shader\Shadow.frag" />
+    <None Include="shader\Shadow.vert" />
+    <None Include="shader\Shape.frag" />
+    <None Include="shader\Shape.geo" />
+    <None Include="shader\Shape.vert" />
+    <None Include="shader\SkyBox.frag" />
+    <None Include="shader\SkyBox.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

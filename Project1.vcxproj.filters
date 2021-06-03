@@ -13,163 +13,157 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Shader_test">
+      <UniqueIdentifier>{ded6ab12-780d-4151-a638-0f36eb51f820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader_test\cpp">
+      <UniqueIdentifier>{a41d8ea0-ef40-4955-a642-aed4195002bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader_test\header">
+      <UniqueIdentifier>{cb1a6cf0-f359-4d70-8a75-6ac55be60562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader_test\shader">
+      <UniqueIdentifier>{34bc94d5-ff51-458b-995e-64eda35e33bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader_test\Texture">
+      <UniqueIdentifier>{49353715-4dd0-45a4-a4c0-53c8cf75058c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\glad\src\glad.c">
+    <ClCompile Include="Source\main.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FrameBufferObject.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GeometryGenerator.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\render.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\test_camera.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextureLoader.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Hello_Shader.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Source\shader.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="hello_window.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Source\Collision.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="location_system.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Color.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DepthTest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameBuffer.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="cubemap.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="AdvanecLighting.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Shadow_Mapping.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Source\MeshLoader.cpp">
+      <Filter>源文件\Shader_test\cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shader.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Libraries\Includes\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\..\Libraries\Includes\glad\glad.h">
+      <Filter>源文件\Shader_test</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FrameBufferObject.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GeometryGenerator.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\render.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\test_camera.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\test_shader.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TextureLoader.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collision.h">
+      <Filter>源文件\Shader_test\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MeshLoader.h">
+      <Filter>源文件\Shader_test\header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="awesomeface.png">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\back.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="container.jpg">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\bottom.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="container2.png">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\brickwall.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="container2_specular.png">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\brickwall_normal.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="matrix.jpg">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\front.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="grass.png">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\left.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="blending_transparent_window.png">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\right.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
-    <Image Include="back.jpg">
-      <Filter>源文件</Filter>
-    </Image>
-    <Image Include="bottom.jpg">
-      <Filter>源文件</Filter>
-    </Image>
-    <Image Include="front.jpg">
-      <Filter>源文件</Filter>
-    </Image>
-    <Image Include="left.jpg">
-      <Filter>源文件</Filter>
-    </Image>
-    <Image Include="right.jpg">
-      <Filter>源文件</Filter>
-    </Image>
-    <Image Include="top.jpg">
-      <Filter>源文件</Filter>
+    <Image Include="Texture\top.jpg">
+      <Filter>源文件\Shader_test\Texture</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="shaderfs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="shadervs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.fcolors.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.flight_cube.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.vcolors.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.1.depth_testingvs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.1.depth_testingfs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="Stencilfs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="framebuffer_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="framebuffer_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="cubemap_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="cubemap_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="cube_map_cubebox_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="cube_map_cubebox_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.advenced_lighting_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="1.advenced_lighting_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="3.1_shadow_mapping_depth_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="3.1_shadow_mapping_depth_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="3.1_debug_quad_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="3.1_debug_quad_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="shadow_mapping_vs.txt">
-      <Filter>源文件</Filter>
-    </Text>
-    <Text Include="shadow_mapping_fs.txt">
-      <Filter>源文件</Filter>
-    </Text>
+    <None Include="shader\BoundingBox.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\BoundingBox.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Light.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Light.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\screen.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\screen.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Shadow.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Shadow.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Shape.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Shape.geo">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\Shape.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\SkyBox.frag">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
+    <None Include="shader\SkyBox.vert">
+      <Filter>源文件\Shader_test\shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
