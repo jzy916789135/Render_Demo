@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\glad\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hello_Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="location_system.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cubemap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvanecLighting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shadow_Mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Includes\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="awesomeface.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="container.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="container2.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="container2_specular.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="matrix.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="grass.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="blending_transparent_window.png">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="back.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="bottom.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="front.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="left.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="right.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+    <Image Include="top.jpg">
+      <Filter>源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shaderfs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="shadervs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.fcolors.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.flight_cube.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.vcolors.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.1.depth_testingvs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.1.depth_testingfs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="Stencilfs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="framebuffer_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="framebuffer_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="cubemap_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="cubemap_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="cube_map_cubebox_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="cube_map_cubebox_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.advenced_lighting_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="1.advenced_lighting_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="3.1_shadow_mapping_depth_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="3.1_shadow_mapping_depth_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="3.1_debug_quad_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="3.1_debug_quad_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="shadow_mapping_vs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="shadow_mapping_fs.txt">
+      <Filter>源文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
