@@ -12,7 +12,7 @@ Step 2
 Step 3
 
     1.Click Project -> properties -> VC++ directory in VS to change the include directory and Library Directory
-    (include and Lib in the code respectively)
+    (Includes and Lib in the code respectively)
     
     
     2.Also configure linker - > Input - > additional dependencies as
